@@ -1,0 +1,111 @@
+footer {
+  .container {
+    padding-top: 80px;
+    width: 1120px;
+    .topDiv {
+      display: flex;
+
+      border-bottom: 2px solid #dbdbdb;
+      justify-content: space-around;
+      .menues {
+        padding-bottom: 70px;
+        display: flex;
+        gap: 66px;
+        .left{
+          display: flex;
+          gap: 66px;
+        }
+        .right{
+          display: flex;
+          gap: 66px;
+        }
+        .e {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          a {
+            text-decoration: none;
+            color: #000;
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 22px;
+            &:hover{
+              color: #555555;
+            }
+          }
+        }
+      }
+    }
+    .bottomDiv {
+      display: flex;
+      justify-content: center;
+      padding: 40px 0 50px 0;
+      p {
+        color: #000;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+        &:last-child{
+            margin-left: 35px;
+        }
+        &:first-child{
+            margin-right: 100px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 500px) {
+  footer {
+    .container {
+      padding-top: 80px;
+      width: 1120px;
+      .topDiv {
+        flex-direction: column;
+        .img{
+          img{
+            width: 160px;
+            margin-bottom: 20px;
+          }
+        }
+        .menues {
+          flex-wrap: wrap;
+          padding-bottom: 70px;
+          display: flex;
+          gap: 65px;
+          a{
+            font-style: 12px;
+          }
+          .left{
+            display: block;
+          }
+          .right{
+            display: block;
+          }
+        }
+      }
+      .bottomDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: unset;
+        // padding: un;
+        p {
+          color: #000;
+          font-size: 10px;
+          font-weight: 700;
+          line-height: 18px;
+          width: 200px;
+          &:last-child{
+              margin: 15px 0 0 0;
+          }
+          &:first-child{
+              margin:0 0 15px;
+              // line-height: 0px;
+          }
+        }
+      }
+    }
+  }
+}

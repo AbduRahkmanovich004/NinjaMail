@@ -1,0 +1,43 @@
+.betsBrends {
+  .container {
+    margin-top: 75px;
+    h2 {
+      text-align: center;
+      color: #000;
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 48px;
+    }
+    marquee{
+        margin-top: 70px;
+        img{
+            margin: 0 140px;
+        }
+    }
+    .marq{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .betsBrends {
+    margin-top: 50px;
+    .container {
+      margin-top: 35px;
+      marquee{
+        display: none;
+      }
+      .marq{
+        margin-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+      }
+    }
+  }
+}

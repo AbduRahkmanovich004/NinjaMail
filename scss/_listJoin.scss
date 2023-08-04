@@ -1,0 +1,194 @@
+.listJoin {
+  .container {
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 160px;
+    .w3 {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 32px;
+      .q1 {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        justify-content: end;
+        padding: 20px 30px;
+        width: 342px;
+        height: 239px;
+        &:nth-child(1) {
+          background-image: url(../img/q1.png);
+        }
+        &:nth-child(2) {
+          background-image: url(../img/q2.png);
+        }
+        &:nth-child(3) {
+          background-image: url(../img/q3.png);
+        }
+        h3 {
+          color: #fff;
+          font-size: 34px;
+          font-weight: 900;
+          line-height: 40px;
+        }
+        h5 {
+          color: #fff;
+          font-size: 19px;
+          font-weight: 700;
+          line-height: 22px;
+          r {
+            color: #fff;
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 22px;
+          }
+        }
+      }
+    }
+    h2 {
+      margin: 70px 0 15px;
+      font-family: "Playfair Display", serif;
+      width: 704px;
+      color: #000;
+      text-align: center;
+      font-size: 44px;
+      font-weight: 900;
+      line-height: 48px;
+    }
+    .inpt {
+      display: flex;
+
+      input {
+        border-radius: 10px;
+        width: 310px;
+        height: 65px;
+        border: 1px solid #9f9f9f;
+        padding-left: 25px;
+        margin-right: 30px;
+        outline: #4ba87d;
+      }
+      button {
+        cursor: pointer;
+        width: 221px;
+        height: 65px;
+        color: #fff;
+        text-align: center;
+        border: none;
+        background: #4ba87d;
+        font-size: 21px;
+        font-weight: 900;
+        line-height: 25px;
+        letter-spacing: 1.05px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+      }
+      p {
+        color: #4ba87d;
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 25px;
+        letter-spacing: 1.05px;
+        text-align: left;
+        padding: 10px 0;
+      }
+    }
+    position: relative;
+
+    .kvadrat1 {
+      position: absolute;
+      transform: translate(-626px, -726px);
+      .kv {
+        width: 70px;
+        height: 70px;
+        background: #ffffff79;
+        rotate: 45deg;
+        animation-name: ratat;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+      }
+    }
+    .kvadrat2 {
+      position: absolute;
+      transform: translate(356px, -324px);
+      .kv {
+        width: 70px;
+        height: 70px;
+        background: #efe1bc;
+        rotate: 45deg;
+        animation-name: dig1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+      }
+    }
+
+    .kvadrat3 {
+      transform: translate(287px, -629px);
+      .aylana1 {
+        position: absolute;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        animation-name: dig;
+        animation-duration: 5s;
+        animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+        animation-iteration-count: infinite;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .listJoin {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin-top: 70px;
+      .w3 {
+        zoom: 0.9;
+        flex-direction: column;
+        gap: 42px;
+      }
+      h2 {
+        width: 300px;
+        font-size: 38px;
+      }
+      .inpt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        .inp{
+          p{
+            text-align: center;
+            padding: 10px 0;
+          }
+        }
+        input {
+          width: 360px;
+          border: 1px solid #020202;
+          margin-right: unset;
+        }
+        button {
+          margin: 10px 0;
+        }
+      }
+      .kvadrat1 {
+        display: none;
+      }
+      .kvadrat2 {
+        display: none;
+      }
+
+      .kvadrat3 {
+        display: none;
+      }
+    }
+  }
+}

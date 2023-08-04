@@ -1,0 +1,161 @@
+
+@font-face {
+    font-family: 'Raleway', sans-serif;
+    src: url(../Fonts/Relewey/Raleway-Italic-VariableFont_wght.ttf);
+    src: url(../Fonts/Relewey/Raleway-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Playfair Display', serif;
+    src: url(../Fonts/Playfair_Display/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+    src: url(../Fonts/Playfair_Display/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+
+@keyframes dig {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+@keyframes dig1 {
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(-20px,-20px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+@keyframes ratat {
+    0%{
+        transform: rotate(0);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav, section, footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    .container{
+        width: 1088px;
+        margin: 0 10px;
+        
+    }
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.ssss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.bg{
+    background-image: url(../img/bglarg.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+}
+
+
+.hov:hover{
+    box-shadow: 0px 0px 10px #4ba87d;
+}
+.hov1:hover{
+    box-shadow: 0px 0px 10px #ffffff;
+}
+.zoom:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px #272727;
+}
+forA:hover{
+    transform: scale(1.1)
+}
+
+// div{
+//     border: 1px solid red;
+// }
+
+@import 'nav';
+@import 'home';
+@import 'part2';
+@import 'source';
+@import 'listJoin';
+@import 'betsBrends';
+@import 'getStrarted';
+@import 'footer';
+
+
+@media (max-width:1000px) and (min-width:500px) {
+    body{
+        *{
+            zoom: 0.92;
+        }
+    }
+}
+@media (max-width:800px) and (min-width:500px) {
+    body{
+        *{
+            zoom: 0.85;
+        }
+    }
+}
+
+@media (max-width:500px) and (min-width:500px) {
+
+
+
+    section, footer{
+        display: none;
+    }
+    .container{
+        width: 310px;
+    }
+}
+@media (max-width:500px) {
+    .bg {
+        background-position: 0 28px;
+    }
+}
+@media (max-width:100px){
+    body{
+        *{
+            zoom: 0.4;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 .home {
   margin-top: 150px;
   overflow-x: hidden;
+  padding-bottom: 20px;
   .container {
     width: 1088px;
     background-image: url(../img/homebg.jpg);
@@ -136,5 +137,13 @@
       }
     }
   }
-
+}
+@media (max-width: 320px) {
+  .home {
+    padding: 20px;
+    .container{
+      zoom: 0.78;
+      
+    }
+  }
 }

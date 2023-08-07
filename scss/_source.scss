@@ -65,7 +65,7 @@
   .source {
     .container {
       display: grid;
-      grid-template-columns: 60px 116px 60px;
+      grid-template-columns: 100px 160px 100px;
       grid-template-rows: unset;
       grid-gap: 30px;
       .w1 {
@@ -80,10 +80,18 @@
         grid-row: 2/3;
       }
       .r3 {
+        zoom: 0.9;
         grid-column: 1/4;
         grid-row: 3/4;
         margin-left: 40px;
       }
+    }
+  }
+}
+@media (max-width: 320px) {
+  .source {
+    .container {
+      zoom: 0.85;
     }
   }
 }
